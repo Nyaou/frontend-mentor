@@ -1,1 +1,1 @@
-# https://github.com/Nyaou/projetos---frontend-mentor/blob/main/interactive-rating-component-main/index.html
+# https://nyaou.github.io/projetos---frontend-mentor/
