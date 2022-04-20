@@ -7,4 +7,6 @@ https://nyaou.github.io/projetos---frontend-mentor/interactive-rating-component-
 
 nft card
 
+https://nyaou.github.io/projetos---frontend-mentor/nft-preview-card-component-main/nft-preview-card-component-main
+
 
