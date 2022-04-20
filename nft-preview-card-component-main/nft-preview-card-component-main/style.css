@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;602&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --mainbg: hsl(217, 54%, 11%);
+    --cardbg: hsl(216, 50%, 16%);
+    --line:hsl(215, 51%, 70%);
+    --colorEfect: hsl(178, 100%, 50%);
+
+}
+@media screen and (max-width: 425px){
+    img{
+        width: 280px;
+        height: 280px;
+    }
+    span img{
+        width: 30px;
+        height: 30px;
+    }
+    main{
+        width: 80vw;
+        height: 80vh;
+        padding: 15px;
+    }
+    main > span{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    .itens > div{
+        font-size: 1rem;
+    }
+    .profile{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width: 426px) {
+    img{
+        width: 350px;
+        height: 350px;
+    }
+    span img{
+        width: 40px;
+        height: 40px;
+    }
+    main{
+        height: 70vh;
+        width: 25vw;
+        padding: 20px;
+    }
+    main > span{
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1.3rem;
+        line-height: 2.2rem;
+    }
+    .itens > div{
+        font-size: 1.2rem;
+    }
+    .profile{
+        font-size: 1.3rem;
+    }
+}
+body{
+    background-color: var(--mainbg);
+    font-family: 'Outfit',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+main{
+    background-color: var(--cardbg);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto 20px;
+    border-radius: 20px;
+}
+main > span{
+    align-self: flex-start;
+    font-weight: 602;
+}
+.itens{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    border-bottom: 1px solid var(--line);
+    padding: 0px 0px 15px 0px;
+}
+.itens > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--line);
+}
+div > svg{
+    margin: 0px 8px 0px 0px;
+}
+div:first-child{
+    color: hsl(178, 100%, 50%);
+    font-weight: 602;
+}
+p{
+    color: var(--line);
+    font-weight: 300;
+}
+main > *{
+    margin: 5px 0px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 300;
+    color: var(--line);
+}
+main > img{
+    border-radius: 10px;
+}
+span img{
+    border: 1px solid rgba(255, 255, 255, 0.315);
+    border-radius: 50%;
+}
+.profile a{
+    text-decoration: none;
+    color: white;
+}
+span small{
+    margin-left: 10px;
+}
+/* footer */
+.attribution{ 
+    font-size: 0.8rem; 
+    text-align: center; 
+    position: fixed;
+    bottom: 0;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
