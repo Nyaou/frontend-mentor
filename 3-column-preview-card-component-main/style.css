@@ -109,6 +109,7 @@ footer {
     font-size: 1rem; text-align: center; 
     position: fixed;
     display: flex;
+    align-items: center;
     margin: auto;
     bottom: 0px;
 }
