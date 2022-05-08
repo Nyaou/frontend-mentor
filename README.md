@@ -11,4 +11,4 @@ https://nyaou.github.io/projetos---frontend-mentor/nft-preview-card-component-ma
 
 3 columns card component
 
-https://nyaou.github.io/projetos---frontend-mentor/tree/main/3-column-preview-card-component-main
+https://nyaou.github.io/projetos---frontend-mentor/3-column-preview-card-component-main
