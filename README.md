@@ -2,7 +2,7 @@
 #links:
 
 interative rating component
-
+<a href="https://nyaou.github.io/projetos---frontend-mentor/interactive-rating-component-main/index.html" target="_blank">interative rating component</a>.
 <a target="_blank">https://nyaou.github.io/projetos---frontend-mentor/interactive-rating-component-main/index.html</a>
 
 nft card
