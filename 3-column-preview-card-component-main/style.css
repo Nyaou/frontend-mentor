@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+@media screen and ( max-width:767px ){
+    main{
+        display:flex;
+        flex-direction: column;
+        margin-top: 0.1rem;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 40%;
+        width: 80%;
+        padding: 1.2rem;
+        margin: 0 .8rem 0 .8rem;
+    }
+
+}
+@media screen and (min-width:768px) {
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    section{
+        height: 55%;
+        padding: 2.5rem;
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    body{
+        height: 100vh;
+    }
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+}
+main{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+p{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    flex-grow: 2;
+}
+h1{
+    color:hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2rem;
+}
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0px 0px 5px;
+}
+.sedan button{
+    color: hsl(31, 77%, 52%);
+}
+.sedan button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+.suv button{
+    color: hsl(184, 100%, 22%);
+}
+.suv button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 5px 5px 0px;
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+.luxury button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+button{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    border: 2px solid white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+button:hover{
+    cursor: pointer;
+}
+footer { 
+    font-size: 1rem; text-align: center; 
+    position: fixed;
+    display: flex;
+    margin: auto;
+    bottom: 0px;
+}
+footer a { 
+    color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
