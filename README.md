@@ -9,4 +9,6 @@ nft card
 
 https://nyaou.github.io/projetos---frontend-mentor/nft-preview-card-component-main/nft-preview-card-component-main
 
+3 columns card component
 
+https://nyaou.github.io/projetos---frontend-mentor/tree/main/3-column-preview-card-component-main
