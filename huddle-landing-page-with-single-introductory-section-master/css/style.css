@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@media screen and (min-width:320px) and (max-width:750px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imagens{
+        width: 100vw;
+        height: 373px;
+        display: flex;
+        flex-direction: column;
+        background-image: url(../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    .imagens .logo{
+        width: 40%;
+        margin: 20px;
+    }
+    .imagens .ilustracao{
+        width: 80%;
+        margin: 40px auto;
+    }
+    .conteudo{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    h2{
+        margin-top: 20px;
+        width: 300px;
+        text-align: center;
+    }
+    p{
+        width: 300px;
+        margin: 20px 0;
+        text-align: center;
+    }
+    button{
+        width: 200px;
+        height: 40px;
+    }
+    nav{
+        margin: 20px auto;
+    }
+    nav > a > svg{
+        margin: 0 10px;
+        width: 25px;
+    }
+}
+@media screen and (min-width:751px) and (max-width:1439px) {
+    body{
+        background-image: url(../images/bg-desktop.svg);
+        background-repeat: no-repeat;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .imagens{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+    }
+    .imagens .logo{
+        width: 10%;
+        margin: 10px;
+    }
+    .imagens .ilustracao{
+        width: 35%;
+        margin: 20px auto;
+    }
+    .conteudo{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    h2{
+        margin-top: 10px;
+        width: 400px;
+        text-align: center;
+    }
+    p{
+        width: 600px;
+        margin: 20px 0;
+        text-align: center;
+    }
+    button{
+        width: 250px;
+        height: 50px;
+    }
+    nav{
+        margin: 20px auto;
+    }
+    nav > a > svg{
+        margin: 0 10px;
+        width: 25px;
+    }
+}
+@media screen and (min-width:1440px){
+    body{
+        background-image: url(../images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .imagens{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        background-repeat: no-repeat;
+    }
+    .imagens .logo{
+        width: 20%;
+        margin: 20px 10px; 
+    }
+    .imagens .ilustracao{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .conteudo{
+        width: 40%;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 10px;
+    }
+    h2{
+        margin-top: 10px;
+        width: 400px;
+        text-align: left;
+        font-size: 2em;
+    }
+    p{
+        font-size: 1.2em;
+        width: 400px;
+        margin: 35px 0;
+        text-align: left;
+    }
+    button{
+        width: 300px;
+        height: 60px;
+        font-size: 1.5em;
+    }
+    nav{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 40px;
+    }
+    nav > a > svg{
+        margin: 0 10px;
+        width: 40px;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+        right: auto;
+        left: auto;
+    }
+}
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--Violet);
+    width: 100vw;
+    color: white;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+button{
+    border-radius: 25px;
+    color: var(--Violet);
+    border: none;
+    box-shadow: 0px 4px 1px rgba(51, 51, 51, 0.733);
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+nav{
+    text-align: center;
+}
+nav > a svg{
+    border-radius: 50%;
+    padding: 2px;
+    border: 1px solid black;
+    color: white;
+}
+button:hover{
+    background-color: var(--Soft-Magenta);
+    color: white;
+}
+footer{
+    padding: 10px 0;
+    width: 100%;
+    font-size: 0.8em;
+}
+footer p{
+    margin: 0 auto;
+    text-align: center;
+}
