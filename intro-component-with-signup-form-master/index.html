@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header>
+    <h2>
+      Learn to code by watching others
+    </h2>
+    <p>
+      See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. 
+    </p>
+  </header>
+  <main>
+    <div>
+        <span>Try it free 7 days</span> then $20/mo. thereafter
+    </div>
+    <form action="" id="form">
+      <input type="text" name="f-name" id="f-name" placeholder="First Name">
+      <span class="alerta" id="alertFName"></span>
+      <input type="text" name="l-name" id="l-name" placeholder="Last Name">
+      <span class="alerta" id="alertLName"></span>
+      <input type="email" name="email" id="email" placeholder="Email Address">
+      <span class="alerta" id="alertEmail"></span>
+      <input type="password" name="senha" id="senha" placeholder="Password">
+      <span class="alerta" id="alertSenha"></span>
+      <input type="submit" value="Claim your free trial" id="submit">
+      <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+    </form>
+  </main>
+  <script src="scripts/validacao.js">
+
+  </script>
+</body>
+</html>

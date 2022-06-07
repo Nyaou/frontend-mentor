@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+:root{
+    --bgColor: hsl(0, 100%, 74%);
+    /*cor do botão submit*/
+    --green: hsl(154, 59%, 51%);
+    /*cor do botão com informações*/
+    --blue: hsl(248, 32%, 49%);
+    /*color texto do formulário*/
+    --darkBlue: hsl(249, 10%, 26%);
+    /*cor dos paragrafos*/
+    --grayshiBlue: hsl(246, 25%, 77%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@media screen and (min-width:320px) and (max-width:425px) {
+    body{
+        background: var(--bgColor) url(../images/bg-intro-mobile.png) repeat-y;
+    }
+    header{
+        width: 85vw;
+        height: 30vh;
+        margin: 80px auto 0 auto;
+        text-align: center;
+    }
+    header  p{
+        margin: 20px 0;
+        font-size:1em;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > div{
+        margin-top: 70px;
+        width: 85vw;
+        background-color: var(--blue);
+        padding: 20px 40px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.205);
+        color: rgba(255, 255, 255, 0.815);
+    }
+    main > div > span{
+        color: white;
+    }
+    
+    form{
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 85vw;
+        margin-top: 20px;
+        box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.205);
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    form input{
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    form input[type='submit']{
+        font-size: 0.9em;
+    }
+    form p{
+        margin: 0 auto;
+        width: 75%;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.445);
+        font-size: 0.6em;
+    }
+    form p > span{
+        color: var(--bgColor);
+        font-weight: 600;
+    }
+    form > span{
+        display: block;
+        color: red;
+        font-size: 0.6em;
+        text-align: right;
+        margin: 0 10px 10px 0;
+    }
+}
+@media screen and (min-width:1440px){
+    body{
+        background: var(--bgColor) url(../images/bg-intro-desktop.png) repeat-y;
+        display: flex;
+        justify-content: space-around;
+    }
+    header{
+        width: 40vw;
+        height: 90vh;
+        margin: 200px auto 0 auto;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    header h2{
+        font-size: 2.5em;
+    }
+    header  p{
+        margin: 20px 0;
+        font-size:1.6em;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50vw;
+    }
+
+    main > div{
+        margin-top: 70px;
+        width: 35vw;
+        background-color: var(--blue);
+        padding: 20px 40px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.205);
+        color: rgba(255, 255, 255, 0.815);
+    }
+    main > div > span{
+        color: white;
+    }
+    
+    form{
+        width: 35vw;
+        background-color: white;
+        padding: 40px 40px 20px 40px;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.205);
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    form input{
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+
+    form input[type='submit']{
+        font-size: 0.9em;
+    }
+    form p{
+        margin: 0 auto;
+        width: 75%;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.445);
+        font-size: 0.6em;
+    }
+    form p > span{
+        color: var(--bgColor);
+        font-weight: 600;
+    }
+    form > span{
+        display: block;
+        color: red;
+        font-size: 0.6em;
+        text-align: right;
+        margin: 0 10px 10px 0;
+    }
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+header  p{
+    color: rgba(255, 255, 255, 0.815);
+}
+main > div > span{
+    font-weight: 600;
+}
+form input{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    font-weight: 600;
+    color: var(--darkBlue);
+}
+form input[type='submit']{
+    background-color: var(--green);
+    color: white;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.205);
+    font-weight: 400;
+}
