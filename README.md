@@ -11,6 +11,6 @@
 
 <a href="https://nyaou.github.io/frontend-mentor/huddle-landing-page-with-single-introductory-section-master">Hunddle landing page </a>
 
-<a href="https://nyaou.github.io/frontend-mentor/intro-component-with-signup-form-master">signuo form</a>
+<a href="https://nyaou.github.io/frontend-mentor/intro-component-with-signup-form-master">signup form</a>
 
 
