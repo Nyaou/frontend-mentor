@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+/*
+font-family: 'Fraunces', serif;
+font-family: 'Barlow', sans-serif;
+*/
+
+/*************** CONFIGURAÇÕE GERAIS *************/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+header > nav{
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+}
+main >section#clientes > article > span{
+    display: block;
+}
+/************ FONTES **************/
+
+header > nav > nav.menu-mobile > a{
+    font-family: 'Barlow', sans-serif;
+}
+h2, h3, h4, a, header > nav > nav.menu-mobile > a.contato{
+    font-family: 'Fraunces', serif;
+}
+body{
+    font-family: 'Barlow', sans-serif;
+    color: hsl(212, 27%, 19%);
+}
+main > section#clientes > article > span.destaque-nome{
+    font-weight: 900;
+    font-family: 'Fraunces', serif;
+}
+header > nav > h1{
+    font-weight: 600;
+}
+header > h2{
+    text-align: center;
+    text-transform: uppercase;
+}
+main > section#sobre > article > div > a{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+main > section#servicos > article{
+    text-align: center; 
+}
+main >section#clientes{
+    text-align: center;
+}
+main >section#clientes > h4{
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+main > section#sobre > article > div{
+    text-align: center;
+}
+/********************* CORES ******************/
+header > nav > nav.menu-mobile > a{
+    color: hsl(232, 10%, 55%);
+}
+.border-yellow{
+    border-bottom: 5px solid hsl(51, 100%, 49%);
+}
+.border-pink{
+    border-bottom: 5px solid hsl(7, 99%, 70%);
+}
+a, main > section#clientes > article > span.destaque-nome{
+    text-decoration: none;
+    color: black;
+}
+p , main >section#clientes > h4{
+    color: hsl(210, 4%, 67%);
+}
+main > section#servicos > article:first-child > p , main > section#servicos > article:first-child > h4{
+    color: hsl(167, 40%, 24%);
+}
+main > section#servicos > article:last-child > p, main > section#servicos > article:last-child > h4{
+    color: hsl(198, 62%, 26%);
+}
+main > section#sobre > article > div > p{
+    color: rgba(128, 128, 128, 0.767);
+}
+main >section#clientes > article > p{
+    color: hsl(213, 9%, 39%);
+}
+main > section#clientes > article > span:last-child{
+    color: hsl(210, 4%, 67%);
+}
+footer{
+    text-align: center;
+    background-color: hsl(168, 45%, 67%);
+}
+
+footer > a, footer > nav >a{
+    font-family: 'Barlow', sans-serif;
+    color: hsl(167, 40%, 24%);
+}
+footer > nav.redes-socias> a > svg{
+    fill:#2C7566;
+}
+footer > nav >a:hover, footer > nav.redes-socias> a > svg:hover{
+    color: white;
+    fill: white;
+}
+
+/****** CONFIGURAÇÕES PARA CELULARES ******/
+@media screen and (max-width:375px){
+    /********* CABEÇALHO ********/
+    header{
+        background: url(../images/mobile/image-header.jpg) no-repeat center;
+        height: 80vh;
+    }
+    header > nav{
+        margin: 20px;
+    }
+    header > nav > nav{
+        display: none;
+        position: absolute;
+        top: 80px;
+    }
+    header > nav > nav.menu-mobile{
+        background-color: white;
+        z-index: 1;
+        text-align: center;
+        width: 335px;
+        margin: 0 auto;
+        height: 300px;
+        font-size: 1em;
+    }
+    header > nav > nav.menu-mobile > a{
+        width: 150px;
+        margin: 35px auto 0 auto;
+        display: block;
+        text-align: center;
+        
+    }
+    header > nav > nav.menu-mobile > a.contato{
+        background-color: hsl(51, 100%, 49%);
+        padding: 15px 10px;
+        color: black;
+        border-radius: 40px;
+        text-transform: uppercase;
+    }
+    header > h2{
+        font-size: 2.5em;
+        margin-top: 80px;
+        letter-spacing: 0.2em;
+    }
+   
+    /******** CONTEUDO PRINCIPAL ***********/
+
+    /********** #SOBRE *************/
+    main > section#sobre > article > div{
+        margin: 80px 0;
+    }
+    main > section#sobre > article > div > h3{
+        font-size: 2em;
+        padding: 0 40px;
+        font-weight: 900;
+    }
+    main > section#sobre > article > div > p{
+        padding: 20px 30px;
+        line-height: 1.5em;
+    }
+    main > section#sobre > article > div > a{
+        font-size: 1em;
+    }
+
+    /************ #SERVIÇOS ******************/
+    main > section#servicos > article{
+        height: 600px;
+    } 
+    main >section#servicos > article >h4{
+        padding: 400px 40px 0 40px;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        font-weight: 900;
+    }
+    main > section#servicos > article:first-child{
+        background-image: url(../images/mobile/image-graphic-design.jpg);  
+    }
+    main > section#servicos > article:last-child{
+        background-image: url(../images/mobile/image-photography.jpg);
+    }
+
+    /***************** #CLIENTES *****************/
+    main >section#clientes > h4{
+        font-size: 1em;
+        margin-top: 60px;
+    }
+    main >section#clientes > article > picture > img{
+        border-radius: 50%;
+        margin-top: 60px;
+    }
+    main >section#clientes > article > p{
+        margin: 30px 0;
+        padding: 0 40px;
+    }
+
+    main > section#clientes > article > span.destaque-nome{
+        margin-bottom: 10px;
+    }
+    main > section#clientes > article > span:last-child{
+        font-size: 0.8em;
+    }
+
+    /*************** #PROJETOS ************/
+
+    main > section#projetos{
+        margin-top: 90px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*********** #RODAPÉ *****************/
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    footer > a, footer > nav >a{
+        margin: 0 15px;
+    }
+    footer > a > h1{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    footer > nav.nav-site{
+        margin-bottom: 60px;
+    }
+    footer > nav.redes-socias{
+        margin-bottom: 80px;
+    }
+}
+/****** CONFIGURAÇÕES PARA COMPUTADORES ******/
+@media screen and (min-width:1440px){
+    /********* CABEÇALHO ********/
+    header{
+        background: url(../images/desktop/image-header.jpg) no-repeat center;
+        height: 95vh;
+        padding-top: 20px;
+    }
+    header h1{
+        margin: 0 20px;
+        font-size: 2em;
+        font-weight: bolder;
+    }
+    header > nav{
+        margin: 20px;
+    }
+    header > nav > span#menu-mobile{
+        display: none;
+    }
+    header > nav > nav.menu-mobile{
+        color: white;
+    }
+    header > nav > nav.menu-mobile > a{
+        color: white;
+        margin: 0 20px;
+    }
+    header > nav > nav.menu-mobile > a.contato{
+        text-transform: uppercase;
+        background-color: white;
+        color: black;
+        padding: 20px 30px;
+        border-radius: 30px;
+    }
+    header > nav > nav.menu-mobile > a.contato:hover{
+        background-color: rgba(255, 255, 255, 0.281);
+    }
+    header > h2{
+        font-size: 3em;
+        margin-top: 80px;
+        letter-spacing: 0.2em;
+    }
+   
+    /******** CONTEUDO PRINCIPAL ***********/
+
+    /********** #SOBRE *************/
+    main > section#sobre > article{
+        display: flex;
+        align-items: center;
+    }
+    main > section#sobre > article:first-child{
+        flex-direction: row-reverse;
+    }
+    main > section#sobre > article > div{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        margin: 80px 0;
+        text-align: left;
+        padding: 50px;
+    }
+    
+    main > section#sobre > article > div > h3,
+    main > section#sobre > article > div > p,
+    main > section#sobre > article > div > a{
+        margin: 20px 90px;
+    }
+    main > section#sobre > article > div > h3{
+        font-size: 3em;
+        font-weight: 900;
+    }
+    main > section#sobre > article > div > p{
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    main > section#sobre > article > div > a{
+        font-size: 1em;
+    }
+    /************ #SERVIÇOS ******************/
+    main > section#servicos{
+        display: flex;
+    }
+    main > section#servicos > article{
+        height: 600px;
+        width: 720px;
+
+    } 
+    main > section#servicos > article >h4, main > section#servicos > article >p{
+        width: 360px;
+        margin: 0 auto;
+    }
+    main >section#servicos > article >h4{
+        padding: 400px 40px 0 40px;
+        margin-bottom: 20px;
+        font-size: 1.8em;
+        font-weight: 900;
+    }
+    main > section#servicos > article:first-child{
+        background-image: url(../images/desktop/image-graphic-design.jpg);  
+    }
+    main > section#servicos > article:last-child{
+        background-image: url(../images/desktop/image-photography.jpg);
+    }
+
+    /***************** #CLIENTES *****************/
+    main >section#clientes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    main >section#clientes > h4{
+        font-size: 1em;
+        margin-top: 60px;
+        width: 100%;
+    }
+    main >section#clientes > article{
+        width: 30%;
+        margin-top: 20px;
+    }
+    main >section#clientes > article > picture > img{
+        border-radius: 50%;
+        margin-top: 60px;
+        width: 77px;
+    }
+    main >section#clientes > article > p{
+        margin: 30px 0;
+        padding: 0 40px;
+    }
+
+    main > section#clientes > article > span.destaque-nome{
+        margin-bottom: 10px;
+    }
+    main > section#clientes > article > span:last-child{
+        font-size: 0.8em;
+    }
+
+    /*************** #PROJETOS ************/
+
+    main > section#projetos{
+        margin-top: 90px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    /*********** #RODAPÉ *****************/
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    footer > a, footer > nav >a{
+        margin: 0 15px;
+    }
+    footer > a > h1{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    footer > nav.nav-site{
+        margin-bottom: 60px;
+    }
+    footer > nav.redes-socias{
+        margin-bottom: 80px;
+    }
+}
