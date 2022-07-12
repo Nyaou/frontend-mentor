@@ -1,17 +1,22 @@
+# Projetos
 
-#links:
+aqui estão os links atualizados com os projetos já feitos com base nos layouts do site Frontend Mentor.
 
+## 3 column preview card
+[demo](https://nyaou.github.io/frontend-mentor/3-column-preview-card-component-main)
 
+## Hunddle landing page
+[demo](https://nyaou.github.io/frontend-mentor/huddle-landing-page-with-single-introductory-section-master) 
 
-<a href="https://nyaou.github.io/frontend-mentor/interactive-rating-component-main/index.html">interative rating component</a>.
+## Interactive component
+[demo](https://nyaou.github.io/frontend-mentor/interactive-rating-component-main) 
 
-<a href="https://nyaou.github.io/frontend-mentor/nft-preview-card-component-main/nft-preview-card-component-main">nft card</a>
+## Intro component
+[demo](https://nyaou.github.io/frontend-mentor/intro-component-with-signup-form-master) 
 
-<a href="https://nyaou.github.io/frontend-mentor/3-column-preview-card-component-main">3 columns card component</a>
+## NFT preview card
+[demo](https://nyaou.github.io/frontend-mentor/nft-preview-card-component-main/nft-preview-card-component-main)
 
-<a href="https://nyaou.github.io/frontend-mentor/huddle-landing-page-with-single-introductory-section-master">Hunddle landing page </a>
-
-<a href="https://nyaou.github.io/frontend-mentor/intro-component-with-signup-form-master">signup form</a>
-
-<a href="https://nyaou.github.io/frontend-mentor/sunnyside-agency-landing-page-main">Sunnyside agency</a>
+## Sunnyside agency
+[demo](https://nyaou.github.io/frontend-mentor/sunnyside-agency-landing-page-main)
 
