@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+/*
+font-family: 'Karla', sans-serif;
+font-family: 'DM Serif Display', serif;
+*/
+:root{
+    /*Primary*/
+    --Dark-Violet: hsl(256, 26%, 20%);
+    --Grayish-Blue: hsl(216, 30%, 68%);
+    /*Neutral*/
+    --Very-Dark-Violet: hsl(270, 9%, 17%);
+    --Dark-Grayish-Violet: hsl(273, 4%, 51%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+/* ## CONFIGURAÇÕES GERAIS ## */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: 'Karla', sans-serif;
+}
+h2,h4{
+    font-family: 'DM Serif Display', serif;
+}
+ul{
+    list-style: none;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    width: 200px;
+    color: gray;
+}
+.button{
+    padding: 10px;
+    text-transform: uppercase;
+
+}
+a.wb{
+    background-color: white;
+    color: var(--Dark-Violet);
+    border: 1px solid var(--Dark-Violet);
+}
+a.wb:hover{
+    background-color:var(--Dark-Violet);
+    color: white;
+    border: 1px solid white;
+}
+.bw{
+    background-color:var(--Dark-Violet);
+    color: white;
+    border: 1px solid white;
+}
+a.bw:hover{
+    background-color: white;
+    color: var(--Dark-Violet);
+    border: 1px solid var(--Dark-Violet);
+}
+/* # CONFIGURAÇÕES DO CABEÇALHO # */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header *{
+    color: var(--Dark-Grayish-Violet);
+}
+header > nav > ul > li >a:hover{
+    color: var(--Dark-Violet);
+}
+svg path:hover{
+    fill: var(--Dark-Violet);
+}
+.links-uteis > ul > li > a:hover{
+    border-bottom: 1px solid var(--Dark-Violet);
+}
+.conteudo{
+    color: white;
+}
+.banner > h2{
+    color: white;
+}
+.redes-sociais{
+    border-bottom: 1px solid gray;
+}
+.links-uteis > ul > legend{
+    color: var(--Dark-Grayish-Violet);
+    font-weight: 700;
+}
+.links-uteis > ul > li > a{
+    color: var(--Very-Dark-Violet);
+    font-weight: 700;
+}
+/*mobile*/
+@media screen and (min-width:375px) and (max-width:425px) {
+    h2{
+        font-size: 2em;
+    }
+    /*configurações do cabeçalho*/
+    header{
+        padding: 20px;
+    }
+    .menu{
+        display: none;
+        left: 0;
+        top: 10vh;
+        width: 95%;
+        position: absolute;
+        height: 100%;
+        padding: 10px;
+        text-align: center;
+        background: var(--Very-Dark-Violet) url(../images/mobile/bg-pattern-mobile-nav.svg) no-repeat 100% 100%;
+    }
+    .menu > li{
+        padding: 20px 10px;
+        margin-top: 10px;
+        font-size: 1.5em;
+        color: white;
+    }
+    .menu > li > a:active{
+        color: white;
+    }
+    /*configurações da apresentaçao*/
+    .bg > picture > img{
+        width: 100%;
+    }
+    .bg{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--Dark-Violet);
+    }
+    .conteudo{
+        height: 60vh;
+        background: url(../images/mobile/bg-pattern-intro-left-mobile.svg) no-repeat top left,
+                    url(../images/mobile/bg-pattern-intro-right-mobile.svg) no-repeat 100% 600%;
+        text-align: center;
+    }
+    .conteudo > hr{
+        display: none;
+    }
+    .conteudo > h2{
+        margin-top: 40px;
+    }
+    .conteudo > p{
+        width: 80%;
+        margin: 20px auto 40px auto;
+    }
+    /*configurações dos planos*/
+    .how-work{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .how-work > hr{
+        width: 100px;
+        margin-bottom: 20px;
+    }   
+    .how-work > h2{
+        margin-bottom: 60px;
+    }
+    .how-work > div{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .how-work > div > img, .how-work > div > h4{
+        margin-bottom: 20px;
+    }
+    .how-work > div > h4{
+        font-size: 1.6em;
+    }
+    /*configurações do banner*/
+    .banner{
+        box-sizing: border-box;
+        margin: 0 auto;
+        width: 90%;
+        height: 55vh;
+        background: url(../images/mobile/bg-pattern-how-we-work-mobile.svg) no-repeat top right;
+        background-color: var(--Dark-Violet);
+        padding: 20px;
+    }
+    .banner > h2{
+        margin: 30px 0px;
+        text-align: center;
+        font-size: 2.5em;
+    }
+    .banner > a{
+        margin: 0px 80px;
+    }
+    /*configurações do rodapé*/
+    footer{
+        margin-top: 80px;
+        padding: 80px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background: url(../images/mobile/bg-pattern-footer-mobile.svg) no-repeat top left;
+    }
+    .redes-sociais{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes-sociais > ul{
+        display: flex;
+        margin: 25px 0px;
+    }
+    .redes-sociais > ul > li{
+        margin: 0 10px;
+    }
+    .links-uteis > ul{
+        margin-top: 40px;
+        text-align: center;
+    }
+    .links-uteis > ul > legend{
+        margin-bottom: 20px;
+    }
+}
+
+/*desktop*/
+@media screen and (min-width:1400px){
+    .icone-mobile{
+        display: none;
+    }
+    /*configurações do body*/
+    body{
+        background: url(../images/desktop/bg-pattern-intro-left-desktop.svg) no-repeat;
+        background-position: 0% 30%;
+    }
+    /*configurações da apresentação*/
+    .bg{
+        position: relative;
+        background: url(../images/desktop/bg-pattern-intro-right-desktop.svg) no-repeat top right;
+        background-color: var(--Dark-Violet);
+        height: 90vh;
+        margin-bottom: 250px;
+    }
+    .bg > picture{
+        position: absolute;
+        top: 150px;
+        left: 750px;
+    }
+    .conteudo{
+        width: 40%;
+        position: absolute;
+        top: 150px;
+        left: 100px;
+    }
+    .conteudo > h2{
+        font-size: 5em;
+        margin: 50px 0px 20px 0px;
+    }
+    .conteudo > p{
+        font-size: 1em;
+        margin-bottom: 40px;
+        text-align: justify;
+    }
+    
+    /*configurações do cabeçalho*/
+    header{
+        height: 10vh;
+    }
+    header > a {
+        margin-left: 100px;
+    }
+    header > nav{
+        margin-right: 100px;
+    }
+    .menu{
+        display: flex;
+    }
+    .menu li a{
+        margin: 0px 10px;
+    }
+    .menu-mobile{
+        display: none;
+    }
+    /*configurações dos planos*/
+    .how-work{
+        margin: 0px 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 150px;
+    }
+    .how-work > h2{
+        width: 100%;
+        font-size: 5em;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .how-work > div{
+        width:30%;
+        margin-right: 30px;
+    }
+    .how-work > div > img, .how-work > div > h4{
+        margin-bottom: 20px;
+    }
+    .how-work > div > h4{
+        font-size: 1.5em;
+    }
+    .how-work > div > p{
+        font-size: 1.1em;
+    }
+    /*configurações do banner*/
+    .banner{
+        margin: 0px 100px;
+        position: relative;
+        background:  var(--Dark-Violet) url(../images/desktop/bg-pattern-how-we-work-desktop.svg) no-repeat top right;
+        height: 32vh;
+        margin-bottom: 200px;
+    }
+    .banner > h2{
+        
+        width: 45%;
+        font-size: 3.5em;
+        position: absolute;
+        top: 6vh;
+        left: 90px;
+    }   
+    .banner > a{
+        position: absolute;
+        right: 90px;
+        top: 14vh;
+    }
+    /*configurações do rodapé*/
+    footer{
+        display: flex;
+        flex-direction: column;
+        background: var(--Very-Light-Gray) url(../images/desktop/bg-pattern-footer-desktop.svg) no-repeat top left;
+        padding: 60px 50px;
+    }
+    .redes-sociais{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+    .redes-sociais > ul{
+        display: flex;
+    }
+    .redes-sociais > ul > li{
+        margin: 0px 5px;
+    }
+    .links-uteis{
+        padding-top: 50px;
+        display: flex;
+    }
+    .links-uteis > ul{
+        margin-right: 200px;
+    }
+    .links-uteis > ul > legend{
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    .links-uteis > ul > li{
+        margin-bottom: 10px;
+    }
+}
