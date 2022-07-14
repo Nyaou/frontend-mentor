@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/*
+Headings
+font-family: 'Poppins', sans-serif;
+-------------------------------------
+Body, Call-to-actions
+font-family: 'Open Sans', sans-serif;
+*/
+
+/*Configurações gerais*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    /*Primary*/
+    --Pink: hsl(322, 100%, 66%);
+    /*Neutral*/
+    --Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --Grayish-Blue: hsl(208, 11%, 55%);
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    border-bottom: 1px solid white;
+}
+h2,h3{
+    font-family: 'Poppins', sans-serif;
+}
+ul{
+    list-style: none;
+}
+footer{
+    background-color: var(--Very-Dark-Cyan);
+}
+footer > div{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.11);
+    background-color: white;
+}
+footer > section#informacoes > svg  path{
+    fill: white;
+}
+footer > section#informacoes > div{
+    color: white;
+}
+footer > section#links > ul > li > a > svg > path:hover{
+    fill: var(--Pink);
+}
+footer> p{
+    color: white;
+}
+.button{
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+.button:hover{
+    cursor: pointer;
+}
+.pink{
+    background-color: var(--Pink);
+    color: white;
+}
+.pink:hover{
+    background-color: hsla(322, 100%, 66%, 0.637);;
+}
+.white{
+    background-color: white ;
+}
+.white:hover{
+    color: rgba(0, 0, 0, 0.562);
+}
+/*Mobile*/
+@media screen and (min-width:375px) and (max-width:475px) {
+    /*configurações gerais*/
+    .button{
+        font-size: 0.6em;
+        padding: 5px 20px;
+        border-radius: 10px;
+    }
+    /*configurações do cabeçalho*/
+    img{
+        width: 60%;
+    }
+    header{
+        background: var(--Very-Pale-Cyan) url(../images/bg-hero-mobile.svg);
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 50px;
+    }
+    header > nav{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    header > div{
+        width: 80%;
+        text-align: center;
+        margin: 0px auto 20px auto;
+    }
+    header > div > h2, header > div > p{
+        margin-bottom: 20px;
+    }
+    header > img{
+        width: 80%;
+        margin: 0px 40px;
+    }
+    /*configurações do conteudo principal*/
+    main{
+        padding: 0px 20px;
+        margin: 150px 0px;
+    }
+    main > section{
+        text-align: center;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.11);
+        padding: 50px 10px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    main > section > div > h3{
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+    main > section > div{
+        margin-top: 20px;
+    }
+    /*configurações do rodapé*/
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding: 100px 20px;
+        position: relative;
+    }
+    footer > div{
+        border-radius: 20px;
+        padding: 60px 20px;
+        position: absolute;
+        left: 0.7em;
+        top:-100px;
+        text-align: center;
+    }
+    footer > section#informacoes > div{
+        margin-top: 20px;
+        display: flex;
+    }
+    footer > section#informacoes > div > p{
+        margin-left: 10px;
+        width: 90%;
+    }
+    footer > section#links{
+        margin-top: 20px;
+    }
+    footer > section#links > ul > li{
+        margin-top: 10px;
+    }
+    .row{
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    .row li{
+        margin: 10px;
+    }
+    footer > p{
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+}
+
+/*Desktop*/
+
+@media screen and (min-width:1300px) {
+    /*configurações gerais*/
+    .button{
+        padding: 15px 50px;
+        border-radius: 50px;
+        box-shadow: 3px 4px 1px rgba(0, 0, 0, 0.295);
+    }
+    /*configurações do cabeçalho*/
+    header{
+        background: var(--Very-Pale-Cyan) url(../images/bg-hero-desktop.svg);
+        padding: 50px 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    header > nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }  
+    header > div{
+        width: 40%;
+        margin-top: 100px;
+    }
+    header > div > h2{
+        font-size: 3em;
+        margin-bottom: 20px;
+    }
+    header > div > p{
+        margin-bottom:50px;
+    }
+    header > img{
+        width: 50%;
+    }
+    /*configurações do conteudo principal*/
+    main{
+        margin: 150px 100px;
+    }
+    main > section{
+        display: flex;
+        justify-content: space-around;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.11);
+        margin-bottom: 50px;
+        border-radius: 10px;
+        padding: 60px 5px;
+    }
+    main > section#flowing-conversation{
+        flex-direction: row-reverse;
+    }
+    main > section >div{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main > section > div > h3{
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    main > section > div > p{
+        color: var(--Grayish-Blue);
+    }
+    main > section > img{
+        width: 30%;
+    }
+    /*configurações do rodapé*/
+    footer{
+        padding: 80px 50px;
+        position: relative;
+        margin-top: 200px;
+        display: flex;
+    }
+    footer > div{
+        position: absolute;
+        left: 350px;
+        top: -120px;
+        padding: 50px 80px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    footer > div > h3{
+        font-size: 1.8em;
+        margin-bottom: 20px;
+    }
+    footer > section{
+        margin-top: 60px;
+    }
+    footer > section#informacoes{
+        width: 40%;
+    }
+    
+    footer > section#informacoes > div{
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    footer > section#informacoes > div > p{
+        width: 60%;
+        margin-left: 10px;
+    }
+    footer > section#links{
+        display: flex;
+    }
+    footer > section#links > ul{
+        margin-top: 60px;
+        margin-right: 80px;
+    }
+    footer > section#links > ul > li{
+        margin-bottom: 20px;
+    }
+    
+    .no-border:hover{
+        border: none;
+    }
+    .row{
+        display: flex;
+    }
+    .row > li{
+        margin-right: 50px;
+    }
+    footer > p{
+        position: absolute;
+        right: 230px;
+        bottom: 90px; 
+    }
+}
