@@ -114,7 +114,7 @@ footer > nav >a:hover, footer > nav.redes-socias> a > svg:hover{
 }
 
 /****** CONFIGURAÇÕES PARA CELULARES ******/
-@media screen and (max-width:375px){
+@media screen and (min-width:375px){
     /********* CABEÇALHO ********/
     header{
         background: url(../images/mobile/image-header.jpg) no-repeat center;
